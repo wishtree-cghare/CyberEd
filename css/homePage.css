@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+img {
+    vertical-align: top !important;
+    display: inline-block !important;
+    max-width: 100%;
+}
+
+
+.container{
+
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
