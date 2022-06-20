@@ -1,0 +1,108 @@
+.progress-status-wrapper{
+    display: flex;
+    padding: 45px 0;
+    align-items: flex-end;
+   
+}
+.progress-status-info{
+    display: flex;
+    flex: 0 0 80%;
+    max-width: 80%;
+   
+}
+
+.upgrade-premium-plan-div{
+    flex: 0 0 20%;
+    max-width: 20%;
+    text-align: right;
+
+}
+.logged-in-user{
+    width: 80px;
+    height: 80px;
+    
+}
+.logged-in-user img{
+    border-radius: 50px;
+}
+.logged-in-user-details{
+    padding-left: 20px;
+}
+
+.logged-in-user-details .user-basic-plan{
+    background: rgba(27,97,140,0.2);
+    border-radius: 30px;
+   
+    padding: 6px 20px;
+    text-decoration: none;
+    color: #252525;
+}
+
+.logged-in-user-details h2{
+    margin-bottom: 5px;
+}
+
+.expires-on{
+    padding-left: 20px;
+}
+
+.upgrade-premium-plan a{
+    text-decoration: underline;
+    color: #252525;
+    font-weight: 600;
+    
+}
+/* .progress-status{
+    margin-top: 58px;
+} */
+
+.progress-status-list{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.progress-status-list li{
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+.progress-status-list li a{
+    text-decoration: none;
+    color: #919191;
+}
+
+
+.progress-status-list-active{
+    color: #06529C !important;
+    font-weight: 600;
+    border-bottom: 3px solid #06529C;
+    padding-bottom: 20px;
+}
+.progress-arrow{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+   
+}
+.progress-bar{
+    margin-top: 30px;
+}
+
+progress::before {
+    content: attr(value)'%';
+    position: absolute;
+    left: 65%;
+    bottom: -2px;
+  }
+
+  .download-certificate a{
+    display: inline-block;
+    background: #F6A704;
+    border-radius: 30px;
+    color: #3A3B3C;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }

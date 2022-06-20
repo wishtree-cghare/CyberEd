@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon-16x16.png" />
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <!--Carousel Css-->
+    <link rel="stylesheet" href="css/carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/carousel/owl.theme.default.min.css" />
+
+    <!--font awesome  -->
+    <link rel="stylesheet" href="css/font-awesome/css/all.min.css" />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/homePage.css"/>
+    <link rel="stylesheet" href="css/viewCart.css"/>
+    <link rel="stylesheet" href="css/couseDetailPage.css"/>
+
+
+  </head>
+  <body>
+    <header>
+        <nav class="nav">
+          <div class="container">
+            <div class="navbar">
+              <ul class="nav-list-left nav-links">
+                <li>
+                  <a href="index.html" class="link">
+                   <img src="images/headerlogo-cyed.png" alt="logo" class="logo">
+                  </a>
+                </li>
+                <li class="categories">
+                  <a class="link toggle-btn">
+                    Categories <span class="arrow"></span>
+                  </a>
+                 <!-- <div class="sub-menu">
+                  <div class="sub-menu-list">
+                  <ul class="sub-menu-list-items">
+                    <li class="menu-item network-security"><a href="#">Network Security</a></li>
+                    <li class="menu-item cloud-security"><a href="#">Cloud Security</a></li>
+                    <li class="menu-item"><a href="#">Infrastructure</a></li>
+                    <li class="menu-item"><a href="#">Internet of Things</a></li>
+                    <li class="menu-item"><a href="#">Applications</a></li>
+                    <li class="menu-item"><a href="#">Policy Frameworks</a></li> 
+                  </ul>
+                </div>
+                <div class="verticle-divider">
+
+                </div>
+                <div class="content-area">
+                <div class="sub-category" id="network-security">
+                  <div class="">Network security</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                </div>
+
+                <div class="sub-category" id="cloud-security">
+                  <div class="">Cloud security</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                  <div class="">Sub category</div>
+                </div>
+              </div>
+
+
+              </div>  -->
+
+             
+                </li>
+                <li>
+                  <a href="resources.html" class="link">
+                    My Courses
+
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="link">
+                    Become An Instructor
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="nav-list-right">
+                <li class="search">
+                  <i class="fa-solid fa-magnifying-glass search-icon" style="color: #FFFFFF;"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-user loggedin-user"></i>
+                </li>
+                
+              </ul>
+
+              
+            </div>
+           
+
+          </div>
+          <div class="logged-in-sub-menu">
+            <div class="container">
+            <ul class="sub-menus">
+                <li><a>Network Security</a></li>
+                <li><a>Cloud Security</a></li>
+                <li><a>Infrastructure</a></li>
+                <li><a>Internet of Things</a></li>
+                <li><a>Applications</a></li>
+                <li><a>Policy Frameworks</a></li>
+            </ul>
+        </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="my-cart-wrapper">
+                    <h2>My Cart</h2>
+                <div class="my-cart-table">
+                    <table id="courses">
+                        <tr>
+                          <th class="item">Item</th>
+                          <th class="price">Unit Price</th>
+                          <th class="subtotal">Subtotal</th>
+                          <!-- <th class="action">Action</th> -->
+                        </tr>
+                        <tr>
+                          <td>PHP Bootcamp</td>
+                          <td>USD 15.99</td>
+                          <td>USD 15.99</td>
+                          <td class="delete" >
+                            <i class="fa-solid fa-trash delete-icon"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Python Bootcamp</td>
+                          <td>USD 15.99</td>
+                          <td>USD 15.99</td>
+                          <td class="delete" >
+                            <i class="fa-solid fa-trash delete-icon"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Angular Bootcamp</td>
+                          <td>USD 15.99</td>
+                          <td>USD 15.99</td>
+                          <td class="delete" >
+                            <i class="fa-solid fa-trash delete-icon"></i>
+                          </td>
+                          
+                        </tr>
+
+                        <tr>
+                            <td>
+                            </td>
+                            <td class="total">
+                                TOTAL
+                            </td>
+                            <td >
+                                 <span class="totalValue">USD 475454.97978 
+                                 </span>
+
+                            </td>
+                        </tr>
+                       
+                      </table>
+                </div>
+
+                <div class="proceed-payment">
+                    <a href="#">PROCEED TO PAYMENTS</a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+        
+
+        <script src="js/jquery.js"></script>
+
+        <!--Carousel Js-->
+        <script src="js/All-carousel/owl.carousel.min.js"></script>
+    
+        <!-- custom javascript file -->
+        <script src="js/script.js"></script>
+      </body>
+    </html>

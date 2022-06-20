@@ -1,0 +1,231 @@
+.section{
+    padding-top: 60px;
+    
+}
+.progress-details{
+    display: flex;
+    margin-top: 15px;
+   
+}
+progress {
+    text-align: center;
+    position: relative;
+  }
+  
+progress::before {
+    content: attr(value)'%';
+    position: absolute;
+    left: 160px;
+    top: -3px;
+  }
+
+  .progress-bar{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .progress-share-course{
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: right;
+   
+  }
+
+  .share-course-span{
+    padding-right: 20px;
+    font-weight: 600;
+  }
+
+  .share-course-images img{
+    padding-right: 10px;
+    margin-top: -5px;
+
+  }
+
+  .progress-details{
+    margin-bottom: 35px;
+  }
+
+  .mark-as-complete{
+    width: 100%;
+    background: #F6A704;
+    border-radius: 30px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .mark-as-complete a{
+    
+    text-decoration: none;
+    color: #3A3B3C;
+    font-weight: 600;
+    width: 100%;
+  }
+
+
+  .course-content-php-fundamentals{
+    
+    background: #FFFFFF;
+box-shadow: 0px 3px 15px #00000014;
+border-radius: 10px;
+max-width: 750px;
+/* max-height: 318px; */
+margin-top: 20px;
+
+}
+
+.course-content-php-fundaments-questions{
+   
+   
+    max-width: 750px;
+    max-height: 0;
+    overflow: hidden;
+    transition:  0.5s ease-out;
+   
+}
+
+.course-content-head{
+    display: flex;
+    padding: 20px 46px 20px 20px;
+   
+}
+
+.course-content-head {
+   
+    
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+   
+  }
+
+  .course-content-head:after {
+    content: 'Expand';
+    font-weight: bold;
+    float: right;
+    margin-right: 20px;
+    color: #06529C;
+    text-decoration: underline;
+  }
+
+  .course-content-head-active:after {
+    content: "Collapse";
+    color: #06529C;
+    text-decoration: underline;
+    
+    
+  }
+
+
+
+.course-content-php-fundamentals p{
+    flex: 0 0 90%;
+    max-width: 90%;
+    color: #06529C;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+
+
+
+
+
+.course-content-question1,
+.course-content-question2,
+.course-content-question3{
+    padding: 20px 20px;
+    
+}
+
+
+.course-content-php-fundaments-questions p{
+    color: #3A3B3C;
+    font-weight: normal;
+}
+
+.course-fundamentals{
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-fundamentals-details{
+    flex: 0 0 calc(30% - 20px);
+    max-width: 30%;
+}
+
+.course-preview{
+    flex: 0 0 calc(70% - 20px);
+    max-width: 70%;
+}
+
+[data-tab-info] {
+    display: none;
+}
+  
+.tab-active[data-tab-info] {
+    display: block;
+    
+}
+  
+
+  
+.tabs {
+    
+    display: flex;
+    margin: 0;
+    background: #FFFFFF;
+
+}
+  
+.tabs span {
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+  
+.tabs span:hover {
+    cursor: pointer;
+    
+}
+
+.course-preview-details{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 6px #00000014;
+border-radius: 5px;
+margin-top: 30px;
+}
+
+.tab-content{
+    padding: 30px 20px;
+}
+
+.course-content-que{
+    flex:0 0 77%;
+    max-width: 77%;
+}
+
+.course-content-time{
+    flex:0 0 19%;
+    max-width: 19%;
+}
+
+.other-courses-by-instructor{
+    padding: 30px 0;
+}
+
+.tabs{
+  padding: 0 10px;
+  
+}
+.tabs-active{
+  color: #06529C;
+  border-bottom: 2px solid #06529C !important;
+  font-weight: 600;
+ 
+}
+
+.other-courses-in-category{
+  padding-bottom: 50px;
+}

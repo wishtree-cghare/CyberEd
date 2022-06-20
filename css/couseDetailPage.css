@@ -1,0 +1,452 @@
+
+.loggedin-user{
+    padding-top: 10px;
+
+   
+
+}
+
+.php-bootcamp-section{
+    margin-top: 50px;
+}
+.php-bootcamp-wrapper{
+    padding: 50px 0 32px 0;
+    background: #F8F8F8
+
+}
+.php-bootcamp-info h1{
+    color: #3A3B3C;
+    font-weight: 600;
+}
+
+.php-bootcamp-info p{
+    color: #3A3B3C;
+    margin-top: 5px;
+}
+
+.rating{
+    margin-left: 10px;
+    
+}
+.stars{
+    margin-top: 22px;
+}
+.detail1,
+.detail2,
+.detail3{
+    display: flex;
+    align-items: center;
+}
+.users-comments p{
+    padding-left: 10px;
+}
+.detail2 img,
+.detail3 img{
+    max-width: 15px;
+    max-height: 15px;
+}
+
+.detail2{
+    margin-top: 17px;
+}
+.detail3{
+    margin-top: 10px;
+}
+
+.course-requirements,
+.course-description{
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px #00000014;
+    border-radius: 10px;
+    max-width: 750px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.course-description{
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px #00000014;
+    border-radius: 10px;
+     max-width: 750px;
+    padding: 30px;
+    margin-top: -65px;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.course-requirements{
+    flex: 0 0 70%;
+    max-width: 750px;
+    max-height: 220px;
+}
+.part2{
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-top: -245px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px #00000014;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.part2 img{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.course-includes h4{
+    margin-top: 20px;
+    text-align: left;
+}
+.part2 ul {
+   
+    text-align: left;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.part2 ul li{
+    padding-bottom: 5px;
+}
+
+.buy-course{
+background: #F6A704 0% 0% no-repeat padding-box;
+border-radius: 30px;
+padding: 10px 80px;
+text-decoration: none;
+color: #3A3B3C;
+display: inline-block;
+font: normal normal 600 14px/20px Poppins;
+
+}
+
+.upgrade-course{
+    background: #06529C 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+    padding: 10px 44px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 20px;
+    font: normal normal 600 14px/20px Poppins;
+
+}
+
+.part2-data{
+    padding: 20px 30px;
+}
+
+.social-icons img{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.share-course,
+.social-icons{
+    text-align: left;
+}
+
+.share-course{
+    margin-top: 20px;
+}
+.course-requirements ul{
+    padding-left: 18px;
+    padding-top: 15px;
+}
+
+.course-requirements ul li{
+    padding-bottom: 5px;
+}
+
+.course-description p {
+    padding-top: 15px;
+}
+
+.course-contents{
+    margin-top: 30px;
+}
+
+.php-fundamentals{
+    
+    background: #FFFFFF;
+box-shadow: 0px 3px 15px #00000014;
+border-radius: 10px;
+max-width: 750px;
+/* max-height: 318px; */
+margin-top: 20px;
+
+}
+
+.php-fundamentals .head{
+    display: flex;
+    padding: 20px 30px;
+   
+}
+
+.hr{
+    background-color: #D1D1D1;
+    height: 1px;
+    width: 100%;
+    padding: 0;
+
+}
+
+.php-fundamentals p{
+    flex: 0 0 90%;
+    max-width: 90%;
+    color: #06529C;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+
+
+
+.php-fundaments-questions{
+   
+   
+    max-width: 750px;
+    max-height: 0;
+    overflow: hidden;
+    transition:  0.5s ease-out;
+   
+}
+
+.question1,
+.question2,
+.question3{
+    padding: 20px 30px 20px 40px;
+    
+}
+
+
+.php-fundaments-questions p{
+    color: #3A3B3C;
+    font-weight: normal;
+}
+
+.collapsible {
+   
+    
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px; 
+    /* background-color: #FFFFFF; */
+  }
+
+  .active, .collapsible {
+    /* background-color: pink; */
+  }
+
+  .collapsible:after {
+    content: '\02C5';
+   
+    font-weight: bold;
+    float: right;
+  }
+
+  .active:after {
+    content: "\02C4";
+    
+  }
+  
+  .content {
+
+    
+    max-height: 0;
+    overflow: hidden;
+    transition:  0.6s ease-out;
+    max-width: 85%;
+    text-align: justify;
+
+    font: normal normal normal 14px/22px Poppins;
+    
+  }
+
+  .content p{
+    padding-top: 15px;
+  }
+
+
+  .question{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .que{
+    flex: 0 0 88%;
+    max-width: 88%;
+    
+  }
+
+  .time{
+    flex: 0 0 9%;
+    max-width: 9%;
+    
+  }
+
+
+
+
+
+  .head {
+   
+    
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    
+  }
+
+
+  .active, .collapsible {
+    /* background-color: pink; */
+  }
+
+  .head:after {
+    content: 'Expand';
+   
+    font-weight: bold;
+    float: right;
+    margin-left: 25px;
+    color: #06529C;
+    text-decoration: underline;
+  }
+
+  .head-active:after {
+    content: "Collapse";
+    color: #06529C;
+    text-decoration: underline;
+    
+  }
+
+.review1,
+.review2
+{
+    display: flex;
+    padding-top: 30px;
+}
+
+.student-reviews-section{
+    padding: 60px 0;
+}
+.student-reviews{
+    padding-left: 20px;
+}
+.review-contents{
+    margin-top: 13px;
+    max-width: 674px;
+    max-height: auto;
+}
+  
+.modules{
+    margin-top: 10px;
+}
+.days{
+    padding-left: 10px;
+}
+ .bottom-hr{
+    height: 1px;
+    width: 100%;
+    background-color: #3A3B3C;
+    margin-top: 30px;
+ }
+
+
+ .other-courses-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 100%;
+
+ }
+
+ .course
+ {
+    flex: 0 0 23.6%;
+    max-width: 23.6%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px #00000014;
+    border-radius: 10px;
+    
+ }
+
+.course1,
+.course2,
+.course3{
+    /* margin-right: 21px; */
+    margin-right: 21px;
+
+}
+
+
+
+ .course-img{
+    max-width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+    
+    }
+
+ 
+ .course-details{
+    padding: 21px 30px 30px 30px;
+ }
+.published-by{
+    margin-top: 10px;
+    color: #252525;
+}
+.basic-plan{
+    display: inline-block;
+    margin-top: 23px;
+    padding: 8px 20px;
+    background: rgba(27,97,140,0.2);
+    color: #252525;
+    text-decoration: none;
+    
+}
+.course-details i{
+    padding-left: 80px;
+}
+
+.navbar{
+    position: relative;
+}
+.logged-in-sub-menu{
+    position: absolute;
+    top: 80px;
+    background-color: #1B618C;
+    width: 100%;
+    padding: 19px 0 23px 0;
+  }
+
+  .sub-menus{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sub-menus  a{
+    text-decoration: none;
+    color:#FFFFFF
+  }
+.other-courses-section{
+    padding-bottom: 50px;
+}
+
