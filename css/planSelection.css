@@ -26,25 +26,171 @@ flex: 0 0 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
+
+.fieldsets{
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
 
 .label{
     flex: 0 0 30%;
     max-width: 30%;
 }
 
-.input-field{
+.input-field
+
+{
     flex: 0 0 70%;
     max-width: 70%;
   
 }
 
-.input-field input{
+.input-field input
+{
     width: 100%;
     background: #FFFFFF;
-border: 1px solid #DEDEDE;
-border-radius: 20px;
-height: 40px;
-padding: 10px 20px;
-margin-bottom: 20px;
+    border: 1px solid #DEDEDE;
+    border-radius: 20px;
+    height: 40px;
+    padding: 10px 20px;
+   
+}
+
+.input-fields-div{
+    display: flex;
+    flex-wrap: wrap;
+   
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.input-fields-div div{
+   flex: 0 0 20%;
+   max-width: 20%;
+}
+
+
+.save{
+    background: #F6A704;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: transparent;
+    float: right;
+}
+
+.input-field input:focus-visible{
+    outline: 1px solid #DEDEDE;
+}
+
+.fieldsets:nth-child(3){
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    
+}
+
+.plans-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+   
+}
+.plans-option1 ul li{
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 14px;
+   
+}
+.plans-option1{
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding-right: 32px;
+}
+.plans-option2{
+    flex: 0 0 70%;
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+   
+}
+.plan-div{
+    background: #FFFFFF;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 10px;
+
+}
+
+.plan-div .div1{
+    background: #79C4F2;
+    border-radius: 10px 10px 0px 0px; 
+    padding: 20px 30px 30px 30px;
+    color: #06529C;
+    text-align: center;
+   
+}
+
+.plan-price-div{
+    background: #06529C;
+    padding: 9px 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.plan-div .div1 p{
+    max-width: 166px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.plan1-data ul li{
+    list-style-type: none;
+    text-align: right;
+    padding: 15px 0;
+}
+.plan-data{
+    padding: 20px;
+}
+.plan-data ul li{
+    list-style-type: none;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.plan-data ul li:first-child{
+    padding-top: 0;
+}
+
+.plans-option2 .plan1,
+.plans-option2 .plan2,
+.plans-option2 .plan3
+
+{
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.select-btn{
+    
+    background: #F6A704;
+border-radius: 30px;
+padding: 10px 30px;
+max-width: 220px;
+margin: 0 auto;
+text-align: center;
+font-weight: 600;
+}
+
+.select-btn a{
+    text-decoration: none;
+    color: #3A3B3C;
+    letter-spacing: 1px;
 }

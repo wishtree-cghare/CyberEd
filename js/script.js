@@ -250,3 +250,10 @@ $('.toggle-btn').on('click', function() {
       
     })
   
+    $(document).mouseup(function (e) {
+      $('.more-menus').slideUp(300)
+      $('.logged-in-sub-menu').slideUp(300);
+      $('.sub-menu').slideUp(300);
+
+
+  })
