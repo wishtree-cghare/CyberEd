@@ -121,7 +121,7 @@ $('.toggle-btn').on('click', function() {
   
   for (k = 0; k < columns2.length; k++) {
     columns2[k].addEventListener("click", function() {
-      console.log('clickeddd')
+      
       
       this.classList.toggle("course-content-head-active");
 
@@ -130,7 +130,7 @@ $('.toggle-btn').on('click', function() {
       if (content.style.maxHeight){
         content.style.maxHeight = null;
       } else {
-        console.log( content.scrollHeight)
+       
         content.style.maxHeight = (content.scrollHeight + 200 ) + "px";
       } 
     });
@@ -182,13 +182,17 @@ $('.toggle-btn').on('click', function() {
 
   })
 
-  $('.more-toggle-btn').on('click', function() {
+  $('.more-toggle-btn').on('click', function(e) {
+    e.preventDefault();
+    
+
     $(this).toggleClass('more-arrow-active');
    
   });
 
   $('.more-toggle-btn').on('click', function(e) {
     e.preventDefault();
+   
   
     if ($(this).hasClass('more-arrow-active')) {
        
@@ -250,10 +254,63 @@ $('.toggle-btn').on('click', function() {
       
     })
   
-    $(document).mouseup(function (e) {
-      $('.more-menus').slideUp(300)
-      $('.logged-in-sub-menu').slideUp(300);
-      $('.sub-menu').slideUp(300);
+  //   $(document).mouseup(function (e) {
+  //     $('.more-menus').slideUp(300)
+  //     $('.logged-in-sub-menu').slideUp(300);
+  //     $('.sub-menu').slideUp(300);
 
+
+  // })
+
+
+  $('.sub-category .cat').on('click', function() {
+  
+    $('.sub-category .cat').each(function(){
+      if ($(this).hasClass('your-interests')){
+      $(".sub-category .cat").removeClass('your-interests')
+    };
+   
+
+    })
+    $(this).addClass('your-interests');
 
   })
+
+
+  // stepper
+
+  $(".next-btn").click(function () {
+    var current_tab = $(this).parent();
+    var next_tab = $(this).parent().next();
+
+    current_tab.hide();
+    next_tab.show();
+    $("#progressbar li").each(function () {
+      $(this).removeClass("active-step");
+    });
+    $("#progressbar li").eq($("fieldset").index(next_tab)).addClass("active-step");
+    $("#progressbar li")
+      .eq($("fieldset").index(current_tab))
+      .addClass("completed");
+    $("#progressbar li").each(function () {
+      if ($(this).hasClass("completed")) {
+        $("#progressbar li.completed span:first-child").text("");
+        $("#progressbar li.completed span:first-child").html(
+          "<i class='fa-solid fa-check'></i>"
+        );
+      }
+    });
+  });
+
+  
+  const searchBtn = document.querySelector(".search-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  const searchBox = document.querySelector(".search-box");
+  
+  searchBtn.onclick = () => {
+    searchBox.classList.add("search-active");
+  }
+  
+  cancelBtn.onclick = () => {
+    searchBox.classList.remove("search-active");
+  }

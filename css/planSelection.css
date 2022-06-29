@@ -19,7 +19,7 @@ padding: 30px;
 
 flex: 0 0 70%;
     max-width: 70%;
-
+   
 }
 
 .fieldset{
@@ -71,11 +71,55 @@ flex: 0 0 70%;
     max-width: 70%;
 }
 
-.input-fields-div div{
+.input-fields-div .input-fields{
    flex: 0 0 20%;
    max-width: 20%;
 }
 
+.payment-details .input-fields-div .unit-price,
+.payment-details .input-fields-div .text-field,
+.payment-details .input-fields-div .dummy
+
+
+{
+    flex: 0 0 68%;
+    max-width: 68%;
+}
+ .input-fields-div .sub-total,
+.input-fields-div .apply-code,
+.input-fields-div .proceed
+
+
+{
+    flex: 0 0 32%;
+    max-width: 32%;
+    
+}
+.input-fields-div .proceed
+{
+    background: #F6A704 0% 0% no-repeat padding-box;
+border-radius: 30px;
+padding: 10px 30px;
+text-align: center;
+}
+
+.payment-details .input-fields-div .proceed a{
+    text-decoration: none;
+    color: #3A3B3C;
+    font-weight: 600;
+}
+
+.payment-details .input-fields-div .text-field input
+{
+   
+    
+    border: transparent;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DEDEDE;
+    border-radius: 20px;
+    width: 290px;
+    height: 40px;
+}
 
 .save{
     background: #F6A704;
@@ -90,8 +134,8 @@ flex: 0 0 70%;
 }
 
 .fieldsets:nth-child(3){
-    margin-bottom: 0;
-    padding-bottom: 10px;
+    /* margin-bottom: 0;
+    padding-bottom: 10px; */
     
 }
 
@@ -99,7 +143,7 @@ flex: 0 0 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-   
+    margin-top: 20px;
 }
 .plans-option1 ul li{
     list-style-type: none;
@@ -111,6 +155,7 @@ flex: 0 0 70%;
     flex: 0 0 30%;
     max-width: 30%;
     padding-right: 32px;
+    margin-bottom: 5.3%;
 }
 .plans-option2{
     flex: 0 0 70%;
@@ -163,6 +208,8 @@ border-radius: 10px;
     list-style-type: none;
     text-align: center;
     padding: 15px 0;
+
+   
 }
 
 .plan-data ul li:first-child{
@@ -194,3 +241,265 @@ font-weight: 600;
     color: #3A3B3C;
     letter-spacing: 1px;
 }
+
+.review-cart{
+    font-weight:600;
+    color: #06529C;
+}
+
+#account-form div.fieldsets:last-child{
+    margin-bottom: 0 !important;
+}
+
+
+.payment-details,
+.interests-data
+{
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+.payment-details-div
+{
+background: #FFFFFF;
+border: 1px solid #D1D1D1;
+border-radius: 10px;
+padding: 30px;
+margin-bottom: 20px;
+}
+.review-cart-div{
+    flex: 0 0 100%;
+    max-width: 100%;
+   
+   
+}
+.month,
+.year{
+    max-width: 53px;
+}
+
+.year-span{
+    padding-left: 20px
+    ;
+}
+
+.total-cost{
+    padding-left:30px;
+}
+
+.pay-btn{
+    text-align: right;
+    background: #F6A704;
+border-radius: 30px;
+padding: 10px 30px;
+text-align: center;
+font-weight: 600;
+
+}
+
+.pay-btn a{
+    text-decoration: none;
+    color: #3A3B3C;
+}
+
+.input-fields-div .total-cost{
+    flex: 0 0 85%;
+    max-width: 85%;
+   
+}
+
+
+.input-fields-div .pay-btn{
+    flex: 0 0 15%;
+    max-width: 15%;
+    
+}
+
+.input-fields-div .cards{
+    padding-right: 20px;
+}
+.content-area{
+    margin-top: 30px;
+}
+.sub-category{
+    padding: 0;
+    border-radius: 30px;
+}
+
+.sub-category div{
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    background-color: rgba(121, 196, 242,0.5);
+    columns: #3A3B3C;
+    
+
+}
+
+.cat{
+    margin-top: 20px;
+}
+
+.interests-data{
+    max-width: 531px;
+   
+}
+
+
+.sub-category {
+    
+    grid-template-columns: auto auto auto;
+   
+  }
+
+  .sub-category > div{
+    
+    padding: 10px 0;
+    
+  }
+
+.cat{
+    cursor: pointer;
+}
+
+  .your-interests{
+    background-color: #06529C !important;
+    color: #FFFFFF !important;
+  }
+
+  .plan-types-section{
+    margin-top: 20px;
+  }
+
+
+
+  /* Stepper */
+
+#msform fieldset:not(:first-of-type) {
+    display: none;
+  }
+
+  fieldset{
+    border: none;
+  }
+ .next-btn{
+    border: transparent;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background: #F6A704;
+    border-radius: 30px;
+    padding: 10px 30px;
+    max-width: 100px;
+   
+    text-align: center;
+    float: right;
+   margin: 30px 100px;
+   color: #3A3B3C;
+   font-weight: 600;
+ }
+
+ .stepper-section{
+    padding: 50px 0;
+ }
+#progressbar{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+
+
+ #progressbar span {
+    display: inline-block;
+    padding: 10px 17px;
+    border-radius: 50px;
+    border: 1px solid black;
+    /* margin-left: 20px; */
+  }
+  #connect-dots {
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    color: rgba(58, 59, 60, 0.3);
+  }
+  .active #connect-dots,
+  .completed #connect-dots {
+    color: #79c4f2;
+  }
+  #progressbar .active-step span {
+    display: inline-block;
+    background: #79c4f2;
+    padding: 10px 18px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+  }
+  #progressbar .completed span:nth-child(1) {
+    display: inline-block;
+    background: #06529c;
+    padding: 10px 14px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    color: #fff;
+  }
+  
+  #progressbar .active-step div {
+    font-weight: 600;
+  }
+  #progressbar div {
+    font-size: 14px;
+    color: #3a3b3c;
+    font-weight: normal;
+    padding-top: 10px;
+  }
+
+  .main-stepper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   
+  }
+
+  .stepper{
+    flex: 0 0 30%;
+    max-width: 30%;
+  
+  }
+
+  .stepper-list{
+    flex: 0 0 70%;
+    max-width: 70%;
+   
+  }
+
+  #progressbar li{
+    flex: 0 0 25%;
+    max-width: 25%;
+    list-style-type: none;
+    
+  }
+
+  #progressbar li a{
+    text-decoration: none;
+  }
+  .stepdot{
+    display: flex;
+  }
+
+  .step{
+    flex: 0 0 10%;
+    
+    margin-left: 30px;
+
+ 
+  }
+
+
+
+  .payments-step{
+    margin: 0 20px;
+   
+  }
+
+  .payment-details-section .next-btn{
+    margin-top: -20px;
+  }
