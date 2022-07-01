@@ -1,11 +1,7 @@
 
-.loggedin-user{
-    padding-top: 10px;
-
-   
-
+.course-detail-page-section{
+    margin-top: 80px;
 }
-
 .php-bootcamp-section{
     margin-top: 50px;
 }
@@ -398,33 +394,7 @@ margin-top: 20px;
 
 
 
- .course-img{
-    max-width: 100%;
-    height: 250px;
-    border-radius: 10px 10px 0 0;
-    
-    }
 
- 
- .course-details{
-    padding: 21px 30px 30px 30px;
- }
-.published-by{
-    margin-top: 10px;
-    color: #252525;
-}
-.basic-plan{
-    display: inline-block;
-    margin-top: 23px;
-    padding: 8px 20px;
-    background: rgba(27,97,140,0.2);
-    color: #252525;
-    text-decoration: none;
-    
-}
-.course-details i{
-    padding-left: 80px;
-}
 
 .navbar{
     position: relative;

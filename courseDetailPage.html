@@ -27,7 +27,6 @@
 
     <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/homePage.css"/>
     <link rel="stylesheet" href="css/couseDetailPage.css"/>
 
   </head>
@@ -36,69 +35,23 @@
           <div class="container">
             <div class="navbar">
               <ul class="nav-list-left nav-links">
-                <li>
+                <li id="nav-list1">
                   <a href="index.html" class="link">
                    <img src="images/headerlogo-cyed.png" alt="logo" class="logo">
                   </a>
                 </li>
-                <li class="categories">
-                  <a class="link toggle-btn">
+                <li class="categories" id="nav-list2">
+                  <a>
                     Categories <span class="arrow"></span>
                   </a>
-                 <!-- <div class="sub-menu">
-                  <div class="sub-menu-list">
-                  <ul class="sub-menu-list-items">
-                    <li class="menu-item network-security"><a href="#">Network Security</a></li>
-                    <li class="menu-item cloud-security"><a href="#">Cloud Security</a></li>
-                    <li class="menu-item"><a href="#">Infrastructure</a></li>
-                    <li class="menu-item"><a href="#">Internet of Things</a></li>
-                    <li class="menu-item"><a href="#">Applications</a></li>
-                    <li class="menu-item"><a href="#">Policy Frameworks</a></li> 
-                  </ul>
-                </div>
-                <div class="verticle-divider">
-
-                </div>
-                <div class="content-area">
-                <div class="sub-category" id="network-security">
-                  <div class="">Network security</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                </div>
-
-                <div class="sub-category" id="cloud-security">
-                  <div class="">Cloud security</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                </div>
-              </div>
-
-
-              </div>  -->
-
-             
                 </li>
-                <li>
+                <li id="nav-list3">
                   <a href="resources.html" class="link">
                     My Courses
 
                   </a>
                 </li>
-                <li>
+                <li id="nav-list4">
                   <a href="#" class="link">
                     Become An Instructor
                   </a>
@@ -107,8 +60,18 @@
 
               <ul class="nav-list-right">
                 <li class="search">
-                  <i class="fa-solid fa-magnifying-glass search-icon" style="color: #FFFFFF;"></i>
-                </li>
+                    <div class="search-box">
+                        <input type="text" placeholder="Type to search..." />
+                        <div class="search-btn">
+                          <i class="fas fa-search search-icon" aria-hidden="true" style="color: #FFFFFF"></i>
+                        </div>
+          
+                        <div class="cancel-btn">
+                          <i class="fas fa-times" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </li>
+            
                 <li>
                     <i class="fa-solid fa-circle-user loggedin-user"></i>
                 </li>
@@ -123,13 +86,13 @@
           <div class="logged-in-sub-menu">
             <div class="container">
             <ul class="sub-menus">
-                <li><a>Network Security</a></li>
-                <li><a>Cloud Security</a></li>
-                <li><a>Infrastructure</a></li>
-                <li><a>Internet of Things</a></li>
-                <li><a>Applications</a></li>
-                <li><a>Policy Frameworks</a></li>
-                <li class="more-link"><a class="more-toggle-btn">More <span class="more-arrow"></span></a>
+                <li id="list1"><a href="#" class="link" id="ns">Network Security</a></li>
+                <li id="list2"><a href="#" class="link" id="cs">Cloud Security</a></li>
+                <li id="list3"><a href="#"class="link" id="inf">Infrastructure</a></li>
+                <li id="list4"><a href="#" class="link" id="iot">Internet of Things</a></li>
+                <li id="list5"><a href="#" class="link" id="app">Applications</a></li>
+                <li id="list6"><a href="#" class="link" id="pf">Policy Frameworks</a></li>
+                <li class="more-link" id="list7"><a class="more-toggle-btn link">More <span class="more-arrow"></span></a>
                     <div class="more-menus">
                     <div class="more-sub-menus">
                     <ul class="more-sub-menus-list">
@@ -139,17 +102,19 @@
                         <li class="more-sub-menus-item"><a href="#">Internet of Things</a></li>
                         <li class="more-sub-menus-item"><a href="#">Applications</a></li>
                         <li class="more-sub-menus-item"><a href="#">Policy Frameworks</a></li>
-                        <!-- <li class="more-sub-menus-item"><a>More</a></li> -->
                     </ul>
                 </div>
             </div>
                 </li>
 
+                <span class="dot"></span>
+
             </ul>
+
         </div>
           </div>
         </nav>
-
+<main>
         <section class="course-detail-page-section">
            
             
@@ -613,7 +578,7 @@
                     <div class="course1 course">
                         <img src="images/course1.jpeg" alt="image" class="course-img">
                         <div class="course-details">
-                            <h2>Course title come here</h2>
+                            <h3>Course title come here</h3>
                             <p class="published-by">John Doe</p>
                             <a href="#" class="basic-plan">Basic Plan</a>
                             <i class="fa-solid fa-arrow-right"></i>
@@ -623,7 +588,7 @@
                     <div class="course2 course">
                         <img src="images/course2.png" alt="image" class="course-img">
                         <div class="course-details">
-                            <h2>Course title come here</h2>
+                            <h3>Course title come here</h3>
                             <p class="published-by">John Doe</p>
                             <a href="#" class="basic-plan">Basic Plan</a>
                             <i class="fa-solid fa-arrow-right"></i>
@@ -634,7 +599,7 @@
                     <div class="course3 course">
                         <img src="images/course3.png" alt="image" class="course-img">
                         <div class="course-details">
-                        <h2>Course title come here</h2>
+                        <h3>Course title come here</h3>
                         <p class="published-by">John Doe</p>
                         <a href="#" class="basic-plan">Basic Plan</a>
                         <i class="fa-solid fa-arrow-right"></i>
@@ -645,7 +610,7 @@
                     <div class="course4 course">
                         <img src="images/course4.png" alt="image" class="course-img">
                         <div class="course-details">
-                            <h2>Course title come here</h2>
+                            <h3>Course title come here</h3>
                             <p class="published-by">John Doe</p>
                             <a href="#" class="basic-plan">Basic Plan</a>
                             <i class="fa-solid fa-arrow-right"></i>
@@ -655,6 +620,7 @@
                 </div>
             </div>
         </section>
+    </main>
         <footer>
             <section class="footer">
               <div class="container">
@@ -670,11 +636,13 @@
       
                   <div class="cyberedio">
                     <img src="images/headerlogo-cyed.png" alt="image">
+                    <div class="numandemail">
                     <div>
                       375 456 3350
                     </div>
                     <div>
                       info@cyberedio.io
+                    </div>
                     </div>
                     <div>
                       <img src="images/Group 208.png" alt="image">

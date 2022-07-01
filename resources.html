@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Resources</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon-16x16.png" />
@@ -27,8 +27,6 @@
 
     <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/couseDetailPage.css"/>
-    <link rel="stylesheet" href="css/homePage.css"/>
     <link rel="stylesheet" href="css/resources.css"/>
 
 
@@ -37,151 +35,161 @@
 
   </head>
   <body>
-        <nav class="nav">
-          <div class="container">
-            <div class="navbar">
-              <ul class="nav-list-left nav-links">
-                <li>
-                  <a href="index.html" class="link">
-                   <img src="images/headerlogo-cyed.png" alt="logo" class="logo">
-                  </a>
-                </li>
-                <li class="categories">
-                  <a class="link toggle-btn">
-                    Categories <span class="arrow"></span>
-                  </a>
-                  <div class="sub-menu">
-                  <div class="sub-menu-list">
+    <nav class="nav">
+      <div class="container">
+        <div class="navbar">
+          <ul class="nav-list-left nav-links">
+            <li id="nav-list1">
+              <a href="index.html" class="link">
+                <img src="images/headerlogo-cyed.png" alt="logo" class="logo">
+              </a>
+            </li>
+            <li class="categories" id="nav-list2">
+              <a class="link">
+                Categories <span class="arrow"></span>
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-list">
                   <ul class="sub-menu-list-items">
-                    <li class="menu-item"><a href="#network-security" class="categories-menu-item-active">Network Security</a></li>
+                    <li class="menu-item"><a href="#network-security" class="categories-menu-item-active">Network
+                        Security</a></li>
                     <li class="menu-item"><a href="#cloud-security">Cloud Security</a></li>
                     <li class="menu-item"><a href="#infrastructure">Infrastructure</a></li>
                     <li class="menu-item"><a href="#iot">Internet of Things</a></li>
                     <li class="menu-item"><a href="#application">Applications</a></li>
-                    <li class="menu-item"><a href="#policy-framework">Policy Frameworks</a></li> 
+                    <li class="menu-item"><a href="#policy-framework">Policy Frameworks</a></li>
                   </ul>
                 </div>
                 <div class="verticle-divider">
-
+  
                 </div>
                 <div class="content-area">
-                <div class="sub-category active-sub-category" id="network-security">
-                  <div class="">Network security</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                </div>
-
-                <div class="sub-category" id="cloud-security">
-                  <div class="">Cloud security</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                </div>
-
-                <div class="sub-category" id="infrastructure">
-                  <div class="">Infrastructure</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                </div>
-
-                <div class="sub-category" id="iot">
-                  <div class="">internet-of-things</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                </div>
-
-                <div class="sub-category" id="application">
-                  <div class="">Application</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                </div>
-
-                <div class="sub-category" id="policy-framework">
-                  <div class="">Policy Framework</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                  <div class="">Sub category</div>
-                </div>
-              </div>
-
-
-              </div>
-                </li>
-                <li>
-                  <a href="resources.html" class="link">
-                    My Courses
-
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="link">
-                    Become An Instructor
-                  </a>
-                </li>
-              </ul>
-
-              <ul class="nav-list-right">
-                <li class="search">
-                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                </li>
-                <li>
-                  <div class="login">
-                    
-                    <a href="#">login</a> |  <a href="#">Sign Up</a>
-
+                  <div class="sub-category active-sub-category" id="network-security">
+                    <div class="">Network security</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
                   </div>
-                </li>
-                
-              </ul>
+  
+                  <div class="sub-category" id="cloud-security">
+                    <div class="">Cloud security</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                  </div>
+  
+                  <div class="sub-category" id="infrastructure">
+                    <div class="">Infrastructure</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                  </div>
+  
+                  <div class="sub-category" id="iot">
+                    <div class="">internet-of-things</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                  </div>
+  
+                  <div class="sub-category" id="application">
+                    <div class="">Application</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                  </div>
+  
+                  <div class="sub-category" id="policy-framework">
+                    <div class="">Policy Framework</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                    <div class="">Sub category</div>
+                  </div>
+                </div>
+  
+  
+              </div>
+            </li>
+            <li id="nav-list3">
+              <a href="resources.html" class="link">
+                My Courses
+  
+              </a>
+            </li>
+            <li id="nav-list4">
+              <a href="#" class="link">
+                Become An Instructor
+              </a>
+            </li>
+          </ul>
+  
+          <ul class="nav-list-right">
+            <li class="search">
+  
+              <div class="search-box">
+                <input type="text" placeholder="Type to search..." />
+                <div class="search-btn ">
+                  <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                </div>
+  
+                <div class="cancel-btn">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </div>
+              </div>
+            </li>
+            <li class="login-div">
+              <div class="login">
+  
+                <a href="#">Login</a> | <a href="#">Sign Up</a>
+  
+              </div>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </div>
+  
+    </nav>
 
-            </div>
-           
-
-          </div>
-            
-        </nav>
-
-        <section class="top-courses-on-cybered">
+        <section class="top-courses-on-cybered latest-insights-section">
           <div class="container">
             <div class="top-courses-on-cybered-wrapper">
               <div class="top-courses-on-cybered-title">
@@ -415,12 +423,14 @@
     
                 <div class="cyberedio">
                   <img src="images/headerlogo-cyed.png" alt="image">
+                  <div class="numandemail">
                   <div>
                     375 456 3350
                   </div>
                   <div>
                     info@cyberedio.io
                   </div>
+                </div>
                   <div>
                     <img src="images/Group 208.png" alt="image">
                     <img src="images/Group 209.png" alt="image">
