@@ -1,102 +1,88 @@
-
-.section{
-    padding-top: 60px;
-    /* padding-bottom: 60px; */
+.section {
+  padding-top: 60px;
+  /* padding-bottom: 60px; */
 }
 
-
-.my-cart-table{
-    background: #FFFFFF;
-    box-shadow: 0px 0px 6px #00000014;
-    border-radius: 5px;
-    margin-top: 20px;
+.my-cart-table {
+  background: #ffffff;
+  box-shadow: 0px 0px 6px #00000014;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
-
-#courses{
-    border-collapse: collapse;
+#courses {
+  border-collapse: collapse;
   width: 100%;
 }
-  #courses td, #courses th {
-    padding: 15px;
-
-  }
-  
-  #courses tr:nth-child(1){
-
-    border-bottom: 2px solid #00000014;
-    
-  }
-
-  #courses tr{
-
-    border-bottom: 1px solid #00000014;
+#courses td,
+#courses th {
+  padding: 15px;
 }
 
+#courses tr:nth-child(1) {
+  border-bottom: 2px solid #00000014;
+}
 
-  #courses tr:hover {
+#courses tr {
+  border-bottom: 1px solid #00000014;
+}
 
-  }
-  
-  #courses th {
-    text-align: left;
-    padding-top: 12px;
+#courses tr:hover {
+}
+
+#courses th {
+  text-align: left;
+  padding-top: 12px;
   padding-bottom: 12px;
   /* text-align: left; */
-   
-  }
+}
 
+.delete-icon {
+  color: #06529c;
+}
+
+.item {
+  width: 50%;
+}
+
+.price {
+  width: 35%;
+  font-weight: 600;
+}
+
+.subtotal {
+  width: 15%;
+  font-weight: 600;
+}
+
+.total {
+  font-weight: 600;
+  text-align: right;
+}
+.totalValue {
+  font-weight: 600;
+}
+
+.proceed-payment {
+  margin-top: 20px;
+  max-width: 222px;
+  float: right;
+}
+
+.proceed-payment a {
+  background: #f6a704;
+  text-decoration: none;
+  display: inline-block;
+  color: #3a3b3c;
+  padding: 10px 28px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+.my-cart-wrapper {
+  padding-bottom: 110px;
+}
 
 .delete-icon{
-    color:#06529C
-}
-
-.item{
-    width: 50%;
-}
-
-.price{
-    width:35%;
-    font-weight: 600;
-
-    
-}
-
-.subtotal{
-    width:15%;
-    font-weight: 600;
-
-}
-
-
-.total{
-    font-weight: 600;
-    text-align: right;
-}
-.totalValue{
-    font-weight: 600;
-    
-}
-
-.proceed-payment{
-     
-margin-top: 20px;
-max-width: 222px;
-float: right;
-
-}
-
-.proceed-payment a{
-    background: #F6A704;
-    text-decoration: none;
-    display: inline-block;
-    color: #3A3B3C;
-    padding: 10px 28px;
-    font-weight: 600;
-border-radius: 30px;
-
-}
-
-.my-cart-wrapper{
-  padding-bottom: 110px;
+  cursor: pointer;
 }

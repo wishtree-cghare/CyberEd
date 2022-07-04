@@ -11,10 +11,12 @@
 
     <!-- font -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Carousel Css-->
     <link rel="stylesheet" href="css/carousel/owl.carousel.min.css" />
@@ -24,11 +26,9 @@
     <link rel="stylesheet" href="css/font-awesome/css/all.min.css" />
 
     <!-- custom css file -->
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/viewCart.css"/>
-    
+    <link rel="stylesheet" href="css/style.css" />
 
-
+    <link rel="stylesheet" href="css/viewCart.css" />
   </head>
   <body>
     <header>
@@ -45,9 +45,6 @@
                 <a>
                   Categories <span class="arrow"></span>
                 </a>
-          
-
-           
               </li>
               <li id="nav-list3">
                 <a href="resources.html" class="link">
@@ -67,11 +64,11 @@
                   <div class="search-box">
                       <input type="text" placeholder="Type to search..." />
                       <div class="search-btn">
-                        <i class="fas fa-search search-icon" aria-hidden="true" style="color: #FFFFFF"></i>
+                        <i class="fas fa-search search-icon" style="color: #FFFFFF"></i>
                       </div>
         
                       <div class="cancel-btn">
-                        <i class="fas fa-times" aria-hidden="true"></i>
+                        <i class="fas fa-times"></i>
                       </div>
                     </div>
                   </li>
@@ -90,8 +87,7 @@
         <div class="logged-in-sub-menu">
           <div class="container">
           <ul class="sub-menus">
-              <li id="list1"><a href="#" class="link" id="ns"
-                  >Network Security</a></li>
+              <li id="list1"><a href="#" class="link" id="ns">Network Security</a></li>
               <li id="list2"><a href="#" class="link" id="cs">Cloud Security</a></li>
               <li id="list3"><a href="#"class="link" id="inf">Infrastructure</a></li>
               <li id="list4"><a href="#" class="link" id="iot">Internet of Things</a></li>
@@ -107,7 +103,6 @@
                       <li class="more-sub-menus-item"><a href="#">Internet of Things</a></li>
                       <li class="more-sub-menus-item"><a href="#">Applications</a></li>
                       <li class="more-sub-menus-item"><a href="#">Policy Frameworks</a></li>
-                      <!-- <li class="more-sub-menus-item"><a>More</a></li> -->
                   </ul>
               </div>
           </div>
@@ -122,116 +117,112 @@
       </nav>
     </header>
     <main>
-        <section class="section">
-            <div class="container">
-                <div class="my-cart-wrapper">
-                    <h2>My Cart</h2>
-                <div class="my-cart-table">
-                    <table id="courses">
-                        <tr>
-                          <th class="item">Item</th>
-                          <th class="price">Unit Price</th>
-                          <th class="subtotal">Subtotal</th>
-                          <!-- <th class="action">Action</th> -->
-                        </tr>
-                        <tr>
-                          <td>PHP Bootcamp</td>
-                          <td>USD 15.99</td>
-                          <td>USD 15.99</td>
-                          <td class="delete" >
-                            <i class="fa-solid fa-trash delete-icon"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Python Bootcamp</td>
-                          <td>USD 15.99</td>
-                          <td>USD 15.99</td>
-                          <td class="delete" >
-                            <i class="fa-solid fa-trash delete-icon"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Angular Bootcamp</td>
-                          <td>USD 15.99</td>
-                          <td>USD 15.99</td>
-                          <td class="delete" >
-                            <i class="fa-solid fa-trash delete-icon"></i>
-                          </td>
-                          
-                        </tr>
+      <section class="section">
+        <div class="container">
+          <div class="my-cart-wrapper">
+            <h2>My Cart</h2>
+            <div class="my-cart-table">
+              <table id="courses" aria-describedby="cart-details">
+                <tr>
+                  <th class="item">Item</th>
+                  <th class="price">Unit Price</th>
+                  <th class="subtotal">Subtotal</th>
+                </tr>
+                <tr>
+                  <td>PHP BootCamp</td>
+                  <td>USD 15.99</td>
+                  <td>USD 15.99</td>
+                  <td class="delete">
+                    <i
+                      class="fa-solid fa-trash delete-icon"
+                    onclick= "deleteItem()"
+                    ></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Python BootCamp</td>
+                  <td>USD 15.99</td>
+                  <td>USD 15.99</td>
+                  <td class="delete">
+                    <i
+                      class="fa-solid fa-trash delete-icon"
+                     
+                    ></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Angular BootCamp</td>
+                  <td>USD 15.99</td>
+                  <td>USD 15.99</td>
+                  <td class="delete">
+                    <i
+                      class="fa-solid fa-trash delete-icon"
+                     
+                    ></i>
+                  </td>
+                </tr>
 
-                        <tr>
-                            <td>
-                            </td>
-                            <td class="total">
-                                TOTAL
-                            </td>
-                            <td >
-                                 <span class="totalValue">USD 475454.97978 
-                                 </span>
-
-                            </td>
-                        </tr>
-                       
-                      </table>
-                </div>
-
-                <div class="proceed-payment">
-                    <a href="#">PROCEED TO PAYMENTS</a>
-                </div>
+                <tr>
+                  <td></td>
+                  <td class="total">TOTAL</td>
+                  <td>
+                    <span class="totalValue">USD 475454.97978 </span>
+                  </td>
+                </tr>
+              </table>
             </div>
-            </div>
-        </section>
 
+            <div class="proceed-payment">
+              <a href="#">PROCEED TO PAYMENTS</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-        
+
     <footer>
       <section class="footer">
         <div class="container">
           <div class="footer-wrapper">
             <div class="close-the-gap">
-              <div class="close-the-gap-text">
-                CLOSE THE GAP.
-              </div>
+              <div class="close-the-gap-text">CLOSE THE GAP.</div>
               <div class="close-the-gap-text-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae, vero eum nisi magni voluptas quos expedita deserunt? Modi, ea?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                repudiandae, vero eum nisi magni voluptas quos expedita
+                deserunt? Modi, ea?
               </div>
             </div>
 
             <div class="cyberedio">
-              <img src="images/headerlogo-cyed.png" alt="image">
-          <div class="numandemail">
-
-              <div>
-                375 456 3350
+              <img src="images/headerlogo-cyed.png" alt="image" />
+              <div class="numandemail">
+                <div>375 456 3350</div>
+                <div>info@cyberedio.io</div>
               </div>
               <div>
-                info@cyberedio.io
-              </div>
-          </div>
-              <div>
-                <img src="images/Group 208.png" alt="image">
-                <img src="images/Group 209.png" alt="image">
-                <img src="images/Group 210.png" alt="image">
+                <img src="images/Group 208.png" alt="image" />
+                <img src="images/Group 209.png" alt="image" />
+                <img src="images/Group 210.png" alt="image" />
               </div>
             </div>
           </div>
-          
         </div>
       </section>
+
       <section class="copyright">
         <div class="copyright-wrapper">
-          &#169; 2021 Information Security Media Group | About ISMG | Terms & Conditions
+          &#169; 2021 Information Security Media Group | About ISMG | Terms &
+          Conditions
         </div>
       </section>
     </footer>
 
-        <script src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
 
-        <!--Carousel Js-->
-        <script src="js/All-carousel/owl.carousel.min.js"></script>
-    
-        <!-- custom javascript file -->
-        <script src="js/script.js"></script>
-      </body>
-    </html>
+    <!--Carousel Js-->
+    <script src="js/All-carousel/owl.carousel.min.js"></script>
+
+    <!-- custom javascript file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

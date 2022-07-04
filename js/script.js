@@ -1,3 +1,6 @@
+
+
+
 $('.sub-menus li').on('click', function() 
   {
     
@@ -137,61 +140,96 @@ $('.categories').on('click', function() {
 
 
 
-  // collapsible
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-  
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } 
-    });
-  }  
 
 
-  var columns = document.getElementsByClassName("head");
-  var j;
-  
-  for (j = 0; j < columns.length; j++) {
-    columns[j].addEventListener("click", function() {
-      this.classList.toggle("head-active");
-
-      var content = this.nextElementSibling;
-      console.log(content)
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        console.log( content.scrollHeight)
-        content.style.maxHeight = (content.scrollHeight + 200 ) + "px";
-      } 
-    });
-  } 
 
 
-  var columns2 = document.getElementsByClassName("course-content-head");
-  console.log(columns2)
-  var k;
-  
-  for (k = 0; k < columns2.length; k++) {
-    columns2[k].addEventListener("click", function() {
+
+  function toggleContent(content) {
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + '200px';
+    }
+  }
+
+
+  // collapse all open content
+  // close previos div on open of next div 
+  // collapse of head
+
+
+function collapseAllOpenContent() {
+  const colls_head = document.getElementsByClassName('head');
+  for (const coll_head of colls_head) {
+    if (coll_head.classList.contains('active-head')) {
+      coll_head.classList.remove('active-head');
+      toggleContent(coll_head.nextElementSibling);
+    }
+  }
+}
+
+
+const colls = document.getElementsByClassName('head');
+for (const coll_head of colls) {
+  coll_head.addEventListener('click', function() {
+    if (!this.classList.contains('active-head')) {
+      collapseAllOpenContent();
+    }
+    this.classList.toggle('active-head');
+    toggleContent(this.nextElementSibling);
+  });
+}
+
+
+
+// collapse of content
+function collapseAllOpenContent_collapse() {
+  const colls_collapsible = document.getElementsByClassName('collapsible');
+  for (const coll_collapsible of colls_collapsible) {
+    if (coll_collapsible.classList.contains('active')) {
+      coll_collapsible.classList.remove('active');
+      toggleContent(coll_collapsible.nextElementSibling);
+    }
+  }
+}
+
+const colls_collapse = document.getElementsByClassName('collapsible');
+for (const coll_collapsible of colls_collapse) {
+  coll_collapsible.addEventListener('click', function() {
+    if (!this.classList.contains('active')) {
+      collapseAllOpenContent_collapse();
+    }
+    this.classList.toggle('active');
+    toggleContent(this.nextElementSibling);
+  });
+}
+
+
+// course content page collapse
+
+function collapseAllOpenContent_course_content_head(){
+  const colls_course_content_head = document.getElementsByClassName('course-content-head');
+  for (const coll_course_content_head of colls_course_content_head) {
+    if (coll_course_content_head.classList.contains('course-content-head-active')) {
+      coll_course_content_head.classList.remove('course-content-head-active');
+      toggleContent(coll_course_content_head.nextElementSibling);
+    }
+  }
+}
+
+  const columns2 = document.getElementsByClassName("course-content-head");
+  for (const course_content_head_coll of columns2) {
+
+    course_content_head_coll.addEventListener("click", function() {
       
-      
-      this.classList.toggle("course-content-head-active");
-
-      var content = this.nextElementSibling;
-      console.log(content)
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-       
-        content.style.maxHeight = (content.scrollHeight + 200 ) + "px";
-      } 
-    });
+      if (!this.classList.contains('course-content-head-active')) {
+        collapseAllOpenContent_course_content_head();
+      }
+      this.classList.toggle('course-content-head-active');
+      toggleContent(this.nextElementSibling);
+    
+    })
   } 
 
   const tabs = document.querySelectorAll('[data-tab-value]')
@@ -232,7 +270,7 @@ $('.categories').on('click', function() {
     $('.tab').each(function(){
       if ($(this).hasClass('tabs-active')){
       $(".tab").removeClass('tabs-active')
-    };
+    }
    
 
     })
@@ -240,6 +278,19 @@ $('.categories').on('click', function() {
 
   })
 
+
+  $('.course_content_tab').on('click', function() {
+  
+    $('.course_content_tab').each(function(){
+      if ($(this).hasClass('course-content-tab-active')){
+      $(".course_content_tab").removeClass('course-content-tab-active')
+    };
+   
+
+    })
+    $(this).addClass('course-content-tab-active');
+
+  })
   $('.more-toggle-btn').on('click', function(e) {
     e.preventDefault();
     
@@ -296,6 +347,7 @@ $('.categories').on('click', function() {
    
   });
 
+
   $(function(){
     
    
@@ -311,14 +363,7 @@ $('.categories').on('click', function() {
       )
       
     })
-  
-  //   $(document).mouseup(function (e) {
-  //     $('.more-menus').slideUp(300)
-  //     $('.logged-in-sub-menu').slideUp(300);
-  //     $('.sub-menu').slideUp(300);
 
-
-  // })
 
 
   $('.sub-category .cat').on('click', function() {
@@ -372,3 +417,23 @@ $('.categories').on('click', function() {
   cancelBtn.onclick = () => {
     searchBox.classList.remove("search-active");
   }
+
+
+
+  $(document).mouseup(function(e) 
+{
+
+ 
+    var container = $(".more-menus");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        container.hide();
+        $('.more-toggle-btn').removeClass('more-arrow-active')
+    }
+  
+    
+});
+
+

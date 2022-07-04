@@ -216,7 +216,7 @@ margin-top: 20px;
     max-width: 750px;
     max-height: 0;
     overflow: hidden;
-    transition:  0.5s ease-out;
+    
    
 }
 
@@ -245,19 +245,18 @@ margin-top: 20px;
     /* background-color: #FFFFFF; */
   }
 
-  .active, .collapsible {
-    /* background-color: pink; */
-  }
 
   .collapsible:after {
-    content: '\02C5';
+    content: '⌄';
    
     font-weight: bold;
     float: right;
+   
   }
 
   .active:after {
-    content: "\02C4";
+    content: "⌃";
+    
     
   }
   
@@ -312,13 +311,11 @@ margin-top: 20px;
   }
 
 
-  .active, .collapsible {
-    /* background-color: pink; */
-  }
+
+
 
   .head:after {
     content: 'Expand';
-   
     font-weight: bold;
     float: right;
     margin-left: 25px;
@@ -387,36 +384,15 @@ margin-top: 20px;
 .course1,
 .course2,
 .course3{
-    /* margin-right: 21px; */
     margin-right: 21px;
 
 }
 
-
-
-
-
-.navbar{
-    position: relative;
-}
-.logged-in-sub-menu{
-    position: absolute;
-    top: 80px;
-    background-color: #1B618C;
-    width: 100%;
-    padding: 19px 0 23px 0;
-  }
-
-  .sub-menus{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .sub-menus  a{
-    text-decoration: none;
-    color:#FFFFFF
-  }
 .other-courses-section{
     padding-bottom: 50px;
 }
 
+.php-fundaments-questions{
+    transition:  all 0.6s ease-in;
+   
+}

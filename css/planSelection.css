@@ -469,9 +469,7 @@ font-weight: 600;
 
   .stepper-list{
     flex: 0 0 70%;
-    max-width: 70%;
-   
-   
+    max-width: 70%; 
   }
 
   #progressbar li{

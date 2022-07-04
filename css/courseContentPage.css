@@ -202,13 +202,13 @@ margin-top: 30px;
 }
 
 .course-content-que{
-    flex:0 0 77%;
-    max-width: 77%;
+    flex:0 0 73%;
+    max-width: 73%;
 }
 
 .course-content-time{
-    flex:0 0 19%;
-    max-width: 19%;
+    flex:0 0 22%;
+    max-width: 22%;
 }
 
 .other-courses-by-instructor{
@@ -219,7 +219,7 @@ margin-top: 30px;
   padding: 0 10px;
   
 }
-.tabs-active{
+.course-content-tab-active{
   color: #06529C;
   border-bottom: 2px solid #06529C !important;
   font-weight: 600;
