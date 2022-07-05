@@ -214,11 +214,18 @@ margin-top: 20px;
    
    
     max-width: 750px;
+ -moz-transition: max-height 200s;
+  -ms-transition:max-height 200s;
+  -o-transition: max-height 200s;
+  -webkit-transition: max-height 200s;
+  transition: max-height 200s;
+ 
     max-height: 0;
-    overflow: hidden;
-    
+    overflow: hidden;  
+   
    
 }
+
 
 .question1,
 .question2,
@@ -311,9 +318,6 @@ margin-top: 20px;
   }
 
 
-
-
-
   .head:after {
     content: 'Expand';
     font-weight: bold;
@@ -393,6 +397,6 @@ margin-top: 20px;
 }
 
 .php-fundaments-questions{
-    transition:  all 0.6s ease-in;
    
+  
 }

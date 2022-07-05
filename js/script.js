@@ -247,6 +247,20 @@ function collapseAllOpenContent_course_content_head(){
       })
   })
 
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document
+            .querySelector(tab.dataset.tabValue);
+
+        tabInfos.forEach(tabInfo => {
+            tabInfo.classList.remove('course-content-tab-active')
+        })
+        target.classList.add('course-content-tab-active');
+    })
+})
+
+
+
 
 
 
@@ -279,12 +293,12 @@ function collapseAllOpenContent_course_content_head(){
   })
 
 
-  $('.course_content_tab').on('click', function() {
+  $('.course-content-tab').on('click', function() {
   
-    $('.course_content_tab').each(function(){
+    $('.course-content-tab').each(function(){
       if ($(this).hasClass('course-content-tab-active')){
-      $(".course_content_tab").removeClass('course-content-tab-active')
-    };
+      $(".course-content-tab").removeClass('course-content-tab-active')
+    }
    
 
     })
